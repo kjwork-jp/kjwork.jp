@@ -2,7 +2,148 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="kjwork.jp" description="kjwork.jp public top site">
-  <h1>kjwork.jp</h1>
-  <p>Coming soon.</p>
+<BaseLayout
+  title="kjwork.jp"
+  description="KJWORK — a public portal for software, infrastructure, automation, and AI-assisted development work."
+>
+  <section class="hero">
+    <h1>kjwork.jp</h1>
+    <p class="tagline">Software, infrastructure, automation, and AI-assisted development</p>
+    <p class="intro">
+      KJWORK is a public portal for software development, cloud infrastructure,
+      automation, and AI-assisted workflows. This site serves as a landing page
+      for public projects and resources.
+    </p>
+  </section>
+
+  <section class="focus">
+    <h2>Focus Areas</h2>
+    <ul class="focus-list">
+      <li>
+        <strong>Software Development</strong>
+        <span>Building reliable, maintainable software solutions.</span>
+      </li>
+      <li>
+        <strong>Infrastructure &amp; Cloud</strong>
+        <span>Designing and operating cloud-native infrastructure.</span>
+      </li>
+      <li>
+        <strong>Automation</strong>
+        <span>Streamlining workflows through automated tooling and CI/CD.</span>
+      </li>
+      <li>
+        <strong>AI-Assisted Workflows</strong>
+        <span>Integrating AI to accelerate development and operations.</span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="projects">
+    <h2>Projects</h2>
+    <p>
+      Public projects and resources are available on the
+      <a href="https://github.com/kjwork-jp" rel="noopener">GitHub organization</a>.
+      More content is coming soon.
+    </p>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>
+      <a href="https://github.com/kjwork-jp" rel="noopener">github.com/kjwork-jp</a>
+    </p>
+  </section>
 </BaseLayout>
+
+<style>
+  .hero {
+    margin-bottom: 3rem;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+  }
+
+  .tagline {
+    font-size: 1.25rem;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+
+  .intro {
+    max-width: 40rem;
+    line-height: 1.8;
+    color: #333;
+  }
+
+  .focus {
+    margin-bottom: 2.5rem;
+  }
+
+  .focus h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .focus-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+  }
+
+  .focus-list li {
+    background: #f7f7f7;
+    border-radius: 8px;
+    padding: 1.25rem;
+  }
+
+  .focus-list li strong {
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+
+  .focus-list li span {
+    color: #555;
+    font-size: 0.9375rem;
+  }
+
+  .projects {
+    margin-bottom: 2.5rem;
+  }
+
+  .projects h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .contact {
+    margin-bottom: 2rem;
+  }
+
+  .contact h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  a {
+    color: #2563eb;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    color: #1d4ed8;
+  }
+
+  @media (max-width: 600px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+
+    .tagline {
+      font-size: 1.125rem;
+    }
+  }
+</style>
